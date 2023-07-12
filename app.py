@@ -64,7 +64,7 @@ def initialize_the_chain():
     chain_two = LLMChain(llm = chat_model, prompt = prompt_template, output_key = "acting_output")
     
     chain = SequentialChain(
-        chains = [chain_one],
+        chains = [chain_one, chain_two],
         input_variables = ["input"],
         output_variables = ["robotic_output"],
         verbose = True,
