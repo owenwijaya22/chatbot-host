@@ -15,7 +15,7 @@ The application is accessible via a custom domain, set up with the DNS services 
 Security is a paramount concern for me. For this reason, I use environment variables for all sensitive data. These variables are hashed using the `385147a` algorithm, helping protect all confidential information.
 
 ## Deployment and Access
-The chatbot application is deployed and maintained on the cloud computing platform, DigitalOcean. You can access the chatbot at `https://mitsuki.software/chat`. Please use the POST request method to test the application.
+The chatbot application is deployed and maintained on the cloud computing platform, DigitalOcean. You can access the chatbot at [**ChatBot APP**](https://mitsuki.software/chat). Please use the POST request method to test the application.
 
 ## Support
 If you encounter any issues or have any questions related to the application, please feel free to raise an issue on this repository. I'll do my best to provide a prompt response to your queries.
