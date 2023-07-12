@@ -1,7 +1,7 @@
 # AI Chatbot
 
 ## Description
-The chatbot is designed to provide a highly interactive and responsive user experience. It's hosted on DigitalOcean, taking advantage of their robust infrastructure.
+The chatbot is designed with prompt engineering to provide a highly interactive and responsive user experience.
 
 ## Technical Specifications
 The chatbot application is powered by an Ubuntu server with the following configurations:
