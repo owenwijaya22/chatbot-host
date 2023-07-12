@@ -90,4 +90,4 @@ def chat():
         return jsonify({"error": "No input data provided"}), 400
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run()
