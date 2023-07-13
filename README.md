@@ -9,7 +9,7 @@ The chatbot application is powered by an Ubuntu server with the following config
 - vCPU: 2
 
 ## DNS Configuration
-The application is accessible via a custom domain, set up with the DNS services provided by Name.com. I've used A records for IP address mapping, and NS records to specify the authoritative nameservers for the domain.
+The application is accessible via a custom domain, set up with the DNS services provided by Name.com and Namecheap.com. I've used A records for IP address mapping, and NS records to specify the authoritative nameservers for the domain.
 
 ## Security and Environment Variables
 Security is a paramount concern for me. For this reason, I use environment variables for all sensitive data. These variables are hashed using the `385147a` algorithm, helping protect all confidential information.
