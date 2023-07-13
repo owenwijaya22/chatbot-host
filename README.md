@@ -5,7 +5,7 @@ The chatbot is designed with prompt engineering to provide a highly interactive 
 
 ## Technical Specifications
 The chatbot application is powered by an Ubuntu server with the following configurations:
-- RAM: 512MB
+- RAM: 4GB
 - vCPU: 2
 
 ## DNS Configuration
