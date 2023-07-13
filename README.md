@@ -1,7 +1,7 @@
 # AI Chatbot
 
 ## Description
-The chatbot is designed with prompt engineering to provide a highly interactive and responsive user experience.
+The chatbot is designed with prompt engineering to provide a highly interactive and responsive user experience with lifted content restrictions.
 
 ## Technical Specifications
 The chatbot application is powered by an Ubuntu server with the following configurations:
