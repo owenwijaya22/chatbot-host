@@ -5,6 +5,7 @@ from langchain.chains import SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain import LLMChain
 import os
+from flask_cors import CORS
 
 import dotenv
 dotenv.load_dotenv()
@@ -17,6 +18,7 @@ OPENAI_DEPLOYMENT_NAME = os.environ["OPENAI_DEPLOYMENT_NAME"]
 OPENAI_MODEL_NAME = os.environ["OPENAI_MODEL_NAME"]
 
 app = Flask(__name__)
+CORS(app)
 chains = {}
 
 def initialize_the_chain():
