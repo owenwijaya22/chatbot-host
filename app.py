@@ -79,7 +79,7 @@ def initialize_the_chain():
 
 chain = initialize_the_chain()
 
-@app.route('/chat', methods=['POST'])
+@app.route('/chat/chatroom_1', methods=['POST'])
 def chat():
     data = request.get_json()
     if "input" in data:
@@ -147,7 +147,7 @@ def initialize_second_chain():
     )
     return chain
 chain2 = initialize_second_chain()
-@app.route('/chat2', methods=['POST'])
+@app.route('/chat/chatroom_2', methods=['POST'])
 def chat2():
     data = request.get_json()
     if "input" in data:
