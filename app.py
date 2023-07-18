@@ -125,7 +125,7 @@ def initialize_second_chain():
     Human: {input} 
     AI: """
     prompt_template = PromptTemplate(
-        input_variables = ["input"],
+        input_variables = ["input", "chat_history"],
         template = template
     )
     chain_one = LLMChain(llm = chat_model, prompt = prompt_template, output_key = "robotic_output")
