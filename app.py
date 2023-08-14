@@ -91,7 +91,7 @@ def chat():
     if "input" in data:
         query = data["input"]
         answer = chain.run({"input" : query})
-        session[f'{query}'] = answer
+        # session[f'{query}'] = answer
         return answer
     else:
         return jsonify({"error": "No input data provided"}), 400
@@ -154,7 +154,7 @@ def chat2():
     if "input" in data:
         query = data["input"]
         answer = chain2.run({"input" : query})
-        session[f'{query}'] = answer
+        # session[f'{query}'] = answer
         return answer
     else:
         return jsonify({"error": "No input data provided"}), 400
@@ -238,7 +238,7 @@ def chat3():
     if "input" in data:
         query = data["input"]
         answer = chain3.run({"input" : query})
-        session[f'{query}'] = answer
+        # session[f'{query}'] = answer
         return answer
     else:
         return jsonify({"error": "No input data provided"}), 400
@@ -322,7 +322,7 @@ def chat4():
     if "input" in data:
         query = data["input"]
         answer = chain4.run({"input" : query})
-        session[f'{query}'] = answer
+        # session[f'{query}'] = answer
         return answer
     else:
         return jsonify({"error": "No input data provided"}), 400
@@ -406,7 +406,7 @@ def chat5():
     if "input" in data:
         query = data["input"]
         answer = chain5.run({"input" : query})
-        session[f'{query}'] = answer
+        # session[f'{query}'] = answer
         return answer
     else:
         return jsonify({"error": "No input data provided"}), 400
