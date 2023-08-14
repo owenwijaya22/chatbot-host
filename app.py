@@ -22,9 +22,9 @@ OPENAI_MODEL_NAME = os.environ["OPENAI_MODEL_NAME"]
 app = Flask(__name__)
 CORS(app)
 
-app.config['SECRET_KEY'] = 'b22a53b76442f5a3be29433a6eb09be3a440090865d4f889'
-app.config['SESSION_TYPE'] = 'redis'
-app.config['SESSION_REDIS'] = FlaskRedis(app)
+# app.config['SECRET_KEY'] = 'b22a53b76442f5a3be29433a6eb09be3a440090865d4f889'
+# app.config['SESSION_TYPE'] = 'redis'
+# app.config['SESSION_REDIS'] = FlaskRedis(app)
 chains = {}
 
 def initialize_the_chain():
