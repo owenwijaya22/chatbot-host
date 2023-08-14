@@ -1,11 +1,9 @@
 from flask import Flask, request, jsonify, session
-from flask_redis import FlaskRedis
 from langchain.chat_models import AzureChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain import LLMChain
-import redis
 # from flask_bcrypt import Bcrypt
 import os
 
