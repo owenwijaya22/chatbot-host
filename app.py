@@ -25,7 +25,7 @@ app = Flask(__name__)
 CORS(app)
 
 chains = {}
-client = pymongo.MongoClient("mongodb+srv://vercel-admin-user:5ZqIYytds2Y4KYDH@cluster0.lpznqjr.mongodb.net/test?retryWrites=true&w=majority")
+client = pymongo.MongoClient(MONGO_URL)
 
 db = client["test"]
 collection = db["ais"]
