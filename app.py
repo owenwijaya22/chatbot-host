@@ -4,9 +4,9 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain import LLMChain
-from bson import ObjectId
+# from bson import ObjectId
 import os
-import pymongo
+# import pymongo
 import dotenv
 from flask_cors import CORS
 
