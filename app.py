@@ -31,7 +31,7 @@ db = client["test"]
 collection = db["ais"]
 
 @app.route('/chat/<string:npcId>', methods=['POST'])
-def chat(npcId):
+def chats(npcId):
     chat_model = AzureChatOpenAI(
     openai_api_base = OPENAI_API_BASE,  
     openai_api_key = OPENAI_API_KEY,
