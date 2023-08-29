@@ -32,7 +32,7 @@ collection = db["ais"]
 
 # @app.route('/chat/<string:npcId>', methods=['POST'])
 # def chats(npcId):
-@app.route('/chat/chats', methods=['POST'])
+@app.route('/chat', methods=['POST'])
 def chats():
     npcId = "64d9a4b4dc8df46458b6e870"
     chat_model = AzureChatOpenAI(
