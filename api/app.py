@@ -35,8 +35,8 @@ def chats(npcId):
     # Get the input data
     data = request.get_json()
     try:
-        auth_token = data["auth_token"]
-        if auth_token == OPENAI_API_KEY:
+        auth_token = request.headers.get("Authorization")
+        if auth_token == 'Bearer ' + OPENAI_API_KEY:
             pass
         else:
             return jsonify({"error": "Invalid auth token"}), 401
