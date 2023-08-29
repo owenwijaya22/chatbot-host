@@ -82,6 +82,3 @@ def chats():
         return answer
     else:
         return jsonify({"error": "No input data provided"}), 400
-
-if __name__ == '__main__':
-    app.run(debug=True)
