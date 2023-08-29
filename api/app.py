@@ -32,6 +32,17 @@ collection = db["ais"]
 
 @app.route('/chat/<string:npcId>', methods=['POST'])
 def chats(npcId):
+    # Get the input data
+    data = request.get_json()
+    try:
+        auth_token = data["auth_token"]
+        if auth_token == OPENAI_API_KEY:
+            pass
+        else:
+            return jsonify({"error": "Invalid auth token"}), 401
+    except KeyError:
+        return jsonify({"error": "No auth token provided"}), 401
+    
     chat_model = AzureChatOpenAI(
     openai_api_base = OPENAI_API_BASE,  
     openai_api_key = OPENAI_API_KEY,
@@ -70,12 +81,12 @@ def chats(npcId):
         memory = ConversationBufferMemory(memory_key = "chat_history")
     )
 
-    # Get the input data
-    data = request.get_json()
-
     if "input" in data:
         query = data["input"]
         answer = chain.run({"input" : query})
         return answer
     else:
         return jsonify({"error": "No input data provided"}), 400
+
+if __name__ == '__main__':
+    app.run(debug=True)
