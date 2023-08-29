@@ -30,11 +30,8 @@ client = pymongo.MongoClient(MONGO_URL)
 db = client["test"]
 collection = db["ais"]
 
-# @app.route('/chat/<string:npcId>', methods=['POST'])
-# def chats(npcId):
-@app.route('/chat', methods=['POST'])
-def chats():
-    npcId = "64d9a4b4dc8df46458b6e870"
+@app.route('/chat/<string:npcId>', methods=['POST'])
+def chats(npcId):
     chat_model = AzureChatOpenAI(
     openai_api_base = OPENAI_API_BASE,  
     openai_api_key = OPENAI_API_KEY,
